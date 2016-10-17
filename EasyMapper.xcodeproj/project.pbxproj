@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160740E81DADB20200C13BE0 /* EasyMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160740DE1DADB20200C13BE0 /* EasyMapper.framework */; };
-		160740ED1DADB20200C13BE0 /* EasyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160740EC1DADB20200C13BE0 /* EasyMapperTests.swift */; };
 		160740EF1DADB20200C13BE0 /* EasyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 160740E11DADB20200C13BE0 /* EasyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16F2B7291DB1ABD700407F48 /* ClassFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B7281DB1ABD700407F48 /* ClassFormatter.swift */; };
+		16F2B72D1DB1B79600407F48 /* EasyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B72C1DB1B79600407F48 /* EasyMapper.swift */; };
+		16FF02FA1DB47FAE00857BF6 /* EasyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF02F91DB47FAE00857BF6 /* EasyMapperTests.swift */; };
+		16FF02FC1DB47FAE00857BF6 /* EasyMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160740DE1DADB20200C13BE0 /* EasyMapper.framework */; };
+		3D25C78535B809E2232EAA66 /* Pods_EasyMapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33236C743350DF6E388B1D82 /* Pods_EasyMapperTests.framework */; };
+		8A17215D2E5F13EED2BD870E /* Pods_EasyMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E1971347FE3BA37E36FAD /* Pods_EasyMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		160740E91DADB20200C13BE0 /* PBXContainerItemProxy */ = {
+		16FF02FD1DB47FAE00857BF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 160740D51DADB20100C13BE0 /* Project object */;
 			proxyType = 1;
@@ -23,12 +27,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111E1971347FE3BA37E36FAD /* Pods_EasyMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160740DE1DADB20200C13BE0 /* EasyMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160740E11DADB20200C13BE0 /* EasyMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyMapper.h; sourceTree = "<group>"; };
 		160740E21DADB20200C13BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		160740E71DADB20200C13BE0 /* EasyMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		160740EC1DADB20200C13BE0 /* EasyMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMapperTests.swift; sourceTree = "<group>"; };
-		160740EE1DADB20200C13BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F2B7281DB1ABD700407F48 /* ClassFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassFormatter.swift; sourceTree = "<group>"; };
+		16F2B72C1DB1B79600407F48 /* EasyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyMapper.swift; sourceTree = "<group>"; };
+		16FF02F71DB47FAE00857BF6 /* EasyMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FF02F91DB47FAE00857BF6 /* EasyMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMapperTests.swift; sourceTree = "<group>"; };
+		16FF02FB1DB47FAE00857BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FF03041DB483B200857BF6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMapper-edqckmsjnirdeedgudwfpamhgmjn/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		16FF03051DB483B200857BF6 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMapper-edqckmsjnirdeedgudwfpamhgmjn/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
+		16FF03061DB483B200857BF6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMapper-edqckmsjnirdeedgudwfpamhgmjn/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		33236C743350DF6E388B1D82 /* Pods_EasyMapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85452F2A1E8D59B5C37F8110 /* Pods-EasyMapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMapperTests/Pods-EasyMapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4C2B42D807D1201ABBD8E49 /* Pods-EasyMapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMapperTests/Pods-EasyMapperTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0F1CC9A6C7C43159F915CA2 /* Pods-EasyMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMapper/Pods-EasyMapper.release.xcconfig"; sourceTree = "<group>"; };
+		FBB14A80694C43F109155235 /* Pods-EasyMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMapper/Pods-EasyMapper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,14 +51,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A17215D2E5F13EED2BD870E /* Pods_EasyMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		160740E41DADB20200C13BE0 /* Frameworks */ = {
+		16FF02F41DB47FAE00857BF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160740E81DADB20200C13BE0 /* EasyMapper.framework in Frameworks */,
+				16FF02FC1DB47FAE00857BF6 /* EasyMapper.framework in Frameworks */,
+				3D25C78535B809E2232EAA66 /* Pods_EasyMapperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				160740E01DADB20200C13BE0 /* EasyMapper */,
-				160740EB1DADB20200C13BE0 /* EasyMapperTests */,
+				16FF02F81DB47FAE00857BF6 /* EasyMapperTests */,
 				160740DF1DADB20200C13BE0 /* Products */,
+				A1E5FD0CCCD9E7E61E41E618 /* Frameworks */,
+				40422D49B33C200FB1A637AC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				160740DE1DADB20200C13BE0 /* EasyMapper.framework */,
-				160740E71DADB20200C13BE0 /* EasyMapperTests.xctest */,
+				16FF02F71DB47FAE00857BF6 /* EasyMapperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,17 +92,42 @@
 			children = (
 				160740E11DADB20200C13BE0 /* EasyMapper.h */,
 				160740E21DADB20200C13BE0 /* Info.plist */,
+				16F2B7281DB1ABD700407F48 /* ClassFormatter.swift */,
+				16F2B72C1DB1B79600407F48 /* EasyMapper.swift */,
 			);
 			path = EasyMapper;
 			sourceTree = "<group>";
 		};
-		160740EB1DADB20200C13BE0 /* EasyMapperTests */ = {
+		16FF02F81DB47FAE00857BF6 /* EasyMapperTests */ = {
 			isa = PBXGroup;
 			children = (
-				160740EC1DADB20200C13BE0 /* EasyMapperTests.swift */,
-				160740EE1DADB20200C13BE0 /* Info.plist */,
+				16FF02F91DB47FAE00857BF6 /* EasyMapperTests.swift */,
+				16FF02FB1DB47FAE00857BF6 /* Info.plist */,
 			);
 			path = EasyMapperTests;
+			sourceTree = "<group>";
+		};
+		40422D49B33C200FB1A637AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBB14A80694C43F109155235 /* Pods-EasyMapper.debug.xcconfig */,
+				C0F1CC9A6C7C43159F915CA2 /* Pods-EasyMapper.release.xcconfig */,
+				85452F2A1E8D59B5C37F8110 /* Pods-EasyMapperTests.debug.xcconfig */,
+				B4C2B42D807D1201ABBD8E49 /* Pods-EasyMapperTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1E5FD0CCCD9E7E61E41E618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16FF03041DB483B200857BF6 /* Alamofire.framework */,
+				16FF03051DB483B200857BF6 /* AlamofireObjectMapper.framework */,
+				16FF03061DB483B200857BF6 /* ObjectMapper.framework */,
+				111E1971347FE3BA37E36FAD /* Pods_EasyMapper.framework */,
+				33236C743350DF6E388B1D82 /* Pods_EasyMapperTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 160740F21DADB20200C13BE0 /* Build configuration list for PBXNativeTarget "EasyMapper" */;
 			buildPhases = (
+				C1EDC7CCE579D9AC61FC991F /* [CP] Check Pods Manifest.lock */,
 				160740D91DADB20100C13BE0 /* Sources */,
 				160740DA1DADB20100C13BE0 /* Frameworks */,
 				160740DB1DADB20100C13BE0 /* Headers */,
 				160740DC1DADB20100C13BE0 /* Resources */,
+				B7BE138CD3C7CEA16A483AB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -118,22 +164,25 @@
 			productReference = 160740DE1DADB20200C13BE0 /* EasyMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		160740E61DADB20200C13BE0 /* EasyMapperTests */ = {
+		16FF02F61DB47FAE00857BF6 /* EasyMapperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 160740F51DADB20200C13BE0 /* Build configuration list for PBXNativeTarget "EasyMapperTests" */;
+			buildConfigurationList = 16FF02FF1DB47FAE00857BF6 /* Build configuration list for PBXNativeTarget "EasyMapperTests" */;
 			buildPhases = (
-				160740E31DADB20200C13BE0 /* Sources */,
-				160740E41DADB20200C13BE0 /* Frameworks */,
-				160740E51DADB20200C13BE0 /* Resources */,
+				ECAEF885AE5EF994ED7380E2 /* [CP] Check Pods Manifest.lock */,
+				16FF02F31DB47FAE00857BF6 /* Sources */,
+				16FF02F41DB47FAE00857BF6 /* Frameworks */,
+				16FF02F51DB47FAE00857BF6 /* Resources */,
+				1AEAEAE86CB51A37BE92AEF0 /* [CP] Embed Pods Frameworks */,
+				4DD6A9ED7AFAD62DBE57C222 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				160740EA1DADB20200C13BE0 /* PBXTargetDependency */,
+				16FF02FE1DB47FAE00857BF6 /* PBXTargetDependency */,
 			);
 			name = EasyMapperTests;
 			productName = EasyMapperTests;
-			productReference = 160740E71DADB20200C13BE0 /* EasyMapperTests.xctest */;
+			productReference = 16FF02F71DB47FAE00857BF6 /* EasyMapperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -148,9 +197,10 @@
 					160740DD1DADB20100C13BE0 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 347AT3X89U;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
-					160740E61DADB20200C13BE0 = {
+					16FF02F61DB47FAE00857BF6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 347AT3X89U;
 						ProvisioningStyle = Automatic;
@@ -170,7 +220,7 @@
 			projectRoot = "";
 			targets = (
 				160740DD1DADB20100C13BE0 /* EasyMapper */,
-				160740E61DADB20200C13BE0 /* EasyMapperTests */,
+				16FF02F61DB47FAE00857BF6 /* EasyMapperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		160740E51DADB20200C13BE0 /* Resources */ = {
+		16FF02F51DB47FAE00857BF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,29 +242,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AEAEAE86CB51A37BE92AEF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMapperTests/Pods-EasyMapperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD6A9ED7AFAD62DBE57C222 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMapperTests/Pods-EasyMapperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7BE138CD3C7CEA16A483AB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMapper/Pods-EasyMapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1EDC7CCE579D9AC61FC991F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAEF885AE5EF994ED7380E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		160740D91DADB20100C13BE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F2B72D1DB1B79600407F48 /* EasyMapper.swift in Sources */,
+				16F2B7291DB1ABD700407F48 /* ClassFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		160740E31DADB20200C13BE0 /* Sources */ = {
+		16FF02F31DB47FAE00857BF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160740ED1DADB20200C13BE0 /* EasyMapperTests.swift in Sources */,
+				16FF02FA1DB47FAE00857BF6 /* EasyMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		160740EA1DADB20200C13BE0 /* PBXTargetDependency */ = {
+		16FF02FE1DB47FAE00857BF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 160740DD1DADB20100C13BE0 /* EasyMapper */;
-			targetProxy = 160740E91DADB20200C13BE0 /* PBXContainerItemProxy */;
+			targetProxy = 16FF02FD1DB47FAE00857BF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -222,6 +352,7 @@
 		160740F01DADB20200C13BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -237,6 +368,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -246,6 +378,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -275,6 +408,7 @@
 		160740F11DADB20200C13BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -290,6 +424,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -299,6 +434,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -320,60 +456,75 @@
 		};
 		160740F31DADB20200C13BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB14A80694C43F109155235 /* Pods-EasyMapper.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 347AT3X89U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EasyMapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlubecki.EasyMapper;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlubecki.easymapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		160740F41DADB20200C13BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F1CC9A6C7C43159F915CA2 /* Pods-EasyMapper.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 347AT3X89U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EasyMapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlubecki.EasyMapper;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlubecki.easymapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		160740F61DADB20200C13BE0 /* Debug */ = {
+		16FF03001DB47FAE00857BF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85452F2A1E8D59B5C37F8110 /* Pods-EasyMapperTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 347AT3X89U;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EasyMapperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jlubecki.EasyMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		160740F71DADB20200C13BE0 /* Release */ = {
+		16FF03011DB47FAE00857BF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C2B42D807D1201ABBD8E49 /* Pods-EasyMapperTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 347AT3X89U;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EasyMapperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jlubecki.EasyMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -399,14 +550,16 @@
 				160740F41DADB20200C13BE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		160740F51DADB20200C13BE0 /* Build configuration list for PBXNativeTarget "EasyMapperTests" */ = {
+		16FF02FF1DB47FAE00857BF6 /* Build configuration list for PBXNativeTarget "EasyMapperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				160740F61DADB20200C13BE0 /* Debug */,
-				160740F71DADB20200C13BE0 /* Release */,
+				16FF03001DB47FAE00857BF6 /* Debug */,
+				16FF03011DB47FAE00857BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

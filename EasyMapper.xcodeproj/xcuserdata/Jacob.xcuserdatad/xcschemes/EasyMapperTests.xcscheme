@@ -8,15 +8,15 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "160740DD1DADB20100C13BE0"
-               BuildableName = "EasyMapper.framework"
-               BlueprintName = "EasyMapper"
+               BlueprintIdentifier = "16FF02E31DB1C02100857BF6"
+               BuildableName = "EasyMapperTests.xctest"
+               BlueprintName = "EasyMapperTests"
                ReferencedContainer = "container:EasyMapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16F2B7311DB1BD7100407F48"
+               BlueprintIdentifier = "16FF02E31DB1C02100857BF6"
                BuildableName = "EasyMapperTests.xctest"
                BlueprintName = "EasyMapperTests"
                ReferencedContainer = "container:EasyMapper.xcodeproj">
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "160740DD1DADB20100C13BE0"
-            BuildableName = "EasyMapper.framework"
-            BlueprintName = "EasyMapper"
+            BlueprintIdentifier = "16FF02E31DB1C02100857BF6"
+            BuildableName = "EasyMapperTests.xctest"
+            BlueprintName = "EasyMapperTests"
             ReferencedContainer = "container:EasyMapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,15 +61,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "160740DD1DADB20100C13BE0"
-            BuildableName = "EasyMapper.framework"
-            BlueprintName = "EasyMapper"
-            ReferencedContainer = "container:EasyMapper.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "160740DD1DADB20100C13BE0"
-            BuildableName = "EasyMapper.framework"
-            BlueprintName = "EasyMapper"
-            ReferencedContainer = "container:EasyMapper.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

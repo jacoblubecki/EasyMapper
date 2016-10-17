@@ -4,42 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>EasyMapper.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>EasyMapperTests.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
+		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EasyMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EasyMapperTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>160740DD1DADB20100C13BE0</key>
+		<key>5F8EA5382D19EA219996D5A1BEC5941D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>160740E61DADB20200C13BE0</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16F2B7311DB1BD7100407F48</key>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16FF02E31DB1C02100857BF6</key>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16FF02F61DB47FAE00857BF6</key>
+		<key>FCEAC22293FE3EB16DABB17940E82033</key>
 		<dict>
 			<key>primary</key>
 			<true/>
