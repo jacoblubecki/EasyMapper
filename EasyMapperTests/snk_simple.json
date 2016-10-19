@@ -1,0 +1,14 @@
+{
+    "name": "John Smith",
+    "age": 27,
+    "hobbies": [
+                "surfing",
+                "knitting",
+                "json parsing"
+                ],
+    "favorite_color": "purple",
+    "cats_owned": 4,
+    "can_drive": true,
+    "is_only_child": false,
+    "books_read": 100
+}

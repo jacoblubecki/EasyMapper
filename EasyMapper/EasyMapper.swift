@@ -46,7 +46,7 @@ extension DataRequest {
         }
     }
     
-    public static func ObjectMapperClassStringSerializer(keyPath: String?, className: String, includeSubstructures: Bool, formatter: ClassFormatter.Type) -> DataResponseSerializer<String> {
+    public static func EasyMapperClassStringSerializer(keyPath: String?, className: String, includeSubstructures: Bool, formatter: ClassFormatter.Type) -> DataResponseSerializer<[String]> {
         return DataResponseSerializer { request, response, data, error in
             guard error == nil else {
                 return .failure(error!)
@@ -100,8 +100,8 @@ extension DataRequest {
      - returns: The request.
      */
     @discardableResult
-    public func responseConvertedToMappable(queue: DispatchQueue? = nil, keyPath: String? = nil, className: String, includeSubstructures: Bool = false, formatter: ClassFormatter.Type = BaseFormatter.self, completionHandler: @escaping (DataResponse<String>) -> Void) -> Self {
-        let serializer = DataRequest.ObjectMapperClassStringSerializer(keyPath: keyPath, className: className, includeSubstructures: includeSubstructures, formatter: formatter)
+    public func responseConvertedToMappable(queue: DispatchQueue? = nil, keyPath: String? = nil, className: String, includeSubstructures: Bool = false, formatter: ClassFormatter.Type = BaseFormatter.self, completionHandler: @escaping (DataResponse<[String]>) -> Void) -> Self {
+        let serializer = DataRequest.EasyMapperClassStringSerializer(keyPath: keyPath, className: className, includeSubstructures: includeSubstructures, formatter: formatter)
         return response(queue: queue, responseSerializer: serializer, completionHandler: completionHandler)
     }
     

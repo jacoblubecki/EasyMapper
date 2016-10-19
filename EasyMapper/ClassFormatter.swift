@@ -13,17 +13,52 @@ public protocol ClassFormatter {
     static func variableName(forKey key: String) -> String
     static func typeString(forKey key: String, andValue value: AnyObject) -> String
     static func classNameForSubstructure(withKey key: String) -> String
+    static func date(fromString string: String) -> Date?
+}
+
+public enum CaseChange {
+    case camelToSnake
+    case snakeToCamel
+    case none
+    case custom(transform: (_ varName: String) -> String)
+    
+    func transform(_ varName: String) -> String {
+        switch self {
+        case .snakeToCamel:
+            return self.convertFromSnakeToCamel(varName)
+            
+        case .camelToSnake:
+            return self.convertFromCamelToSnake(varName)
+            
+        case .none:
+            return varName
+            
+        case let .custom(transform):
+            return transform(varName)
+        }
+    }
+    
+    func convertFromCamelToSnake(_ varName: String) -> String {
+        return varName.replacingOccurrences(of: "([a-z])([A-Z])", with: "$1_$2", options: .regularExpression).lowercased()
+    }
+    
+    func convertFromSnakeToCamel(_ varName: String) -> String {
+        let items = varName.components(separatedBy: "_")
+        var camelCase = ""
+        items.enumerated().forEach { (offset: Int, element: String) in
+            camelCase += ((offset == 0) ? element : element.capitalized)
+        }
+        return camelCase
+    }
 }
 
 extension ClassFormatter {
     
-    public static func serialize(json rootJson: [String : AnyObject], withRootClassName className: String, shouldIncludeSubstructures includeSubstructures: Bool) -> String {
-        var out: String = ""
+    public static func serialize(json rootJson: [String : AnyObject], withRootClassName className: String, shouldIncludeSubstructures includeSubstructures: Bool, withCaseChange caseChange: CaseChange = .none) -> [String] {
         let allSubstructures: [(key: String, value: [String : AnyObject])] = includeSubstructures ? findSubstructures(withRootKey: className, inJson: rootJson) : [ (className, rootJson) ]
         
-        for substructure in allSubstructures {
-            out += formatJsonAsMappableObjectClass(named: substructure.key, forJson: substructure.value)
-            out += "\n\n"
+        let out: [String] = allSubstructures.map { (key, value) -> String in
+            return formatJsonAsMappableObjectClass(named: key, forJson: value, withCaseChange: caseChange)
         }
         
         return out
@@ -38,7 +73,7 @@ extension ClassFormatter {
      
      - returns: The formatted class file as a String.
      */
-    public static func formatJsonAsMappableObjectClass(named className: String, forJson json: [String : AnyObject]) -> String {
+    public static func formatJsonAsMappableObjectClass(named className: String, forJson json: [String : AnyObject], withCaseChange caseChange: CaseChange = .none) -> String {
         let longestKey = longestKeyLength(inJson: json)
         let formattedJson = sortedVariables(forJson: json)
         
@@ -48,7 +83,7 @@ extension ClassFormatter {
         out += "// MARK: - Properties\n\n".indent(1)
         
         for (key, value) in formattedJson {
-            out += "var \(variableName(forKey: key)): \(typeString(forKey: key, andValue: value))?\n".indent(1)
+            out += "var \(caseChange.transform(variableName(forKey: key))): \(typeString(forKey: key, andValue: value))?\n".indent(1)
         }
         
         out += "\n\n"
@@ -59,7 +94,7 @@ extension ClassFormatter {
         out += "func mapping(map: Map) {\n".indent(1)
         
         for (key, _) in formattedJson {
-            let varName = variableName(forKey: key)
+            let varName = caseChange.transform(variableName(forKey: key))
             out += "\(varName + Self.spaces(longestKey - varName.characters.count)) <- map[\"\(key)\"]\n".indent(2)
         }
         
@@ -104,6 +139,19 @@ extension ClassFormatter {
             structures.append(contentsOf: findSubstructures(withRootKey: structure.key, inJson: structure.value))
         }
         
+        var existingKeySets: Set<Set<String>> = Set()
+        structures = structures.filter({ (pair: (key: String, value: [String : AnyObject])) -> Bool in
+            let keyArr: [String] = pair.value.flatMap { $0.key }
+            let currentKeySet = Set(keyArr)
+            
+            if !existingKeySets.contains(currentKeySet) {
+                existingKeySets.insert(currentKeySet)
+                return true
+            }
+            
+            return false
+        })
+        
         return structures
     }
     
@@ -118,7 +166,7 @@ extension ClassFormatter {
         
         var spaces = ""
         
-        for _ in 0 ... numSpaces {
+        for _ in 0 ..< numSpaces {
             spaces += " "
         }
         
@@ -156,13 +204,18 @@ public class BaseFormatter: ClassFormatter {
     }
     
     public static func classNameForSubstructure(withKey key: String) -> String {
-        return key.capitalized
+        // Capitalize each word. Separate into alphanumeric components. Join all alphanumeric components.
+        return key.capitalized.components(separatedBy: CharacterSet.alphanumerics.inverted).joined()
     }
     
     public static func typeString(forKey key: String, andValue value: AnyObject) -> String {
         switch value {
         case is String:
-            return "String"
+            if let _ = date(fromString: (value as! String)) {
+                return "Date"
+            } else {
+                return "String"
+            }
             
         case is Int:
             return "Int"
@@ -172,6 +225,22 @@ public class BaseFormatter: ClassFormatter {
             
         case is Double:
             return "Double"
+            
+        case is [String]:
+            if let arr = value as? [String], let _ = date(fromString: arr[0]) {
+                return "[Date]"
+            } else {
+                return "[String]"
+            }
+            
+        case is [Int]:
+            return "[Int]"
+            
+        case is [Bool]:
+            return "[Bool]"
+            
+        case is [Double]:
+            return "[Double]"
             
         case is [String : AnyObject]:
             return classNameForSubstructure(withKey: key)
@@ -185,12 +254,20 @@ public class BaseFormatter: ClassFormatter {
         case is [[AnyObject]]:
             return "[[AnyObject]]"
             
-        case is NSDate:
-            return "NSDate"
+        case is Date:
+            return "Date"
             
         default:
             return "AnyObject"
         }
+    }
+    
+    public static func date(fromString string: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSSZ"
+        dateFormatter.isLenient = true
+        
+        return dateFormatter.date(from: string)
     }
 }
 

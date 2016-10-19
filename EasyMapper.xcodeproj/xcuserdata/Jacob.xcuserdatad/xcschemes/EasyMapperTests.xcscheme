@@ -14,7 +14,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16FF02E31DB1C02100857BF6"
+               BlueprintIdentifier = "16FF02F61DB47FAE00857BF6"
                BuildableName = "EasyMapperTests.xctest"
                BlueprintName = "EasyMapperTests"
                ReferencedContainer = "container:EasyMapper.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16FF02E31DB1C02100857BF6"
+               BlueprintIdentifier = "16FF02F61DB47FAE00857BF6"
                BuildableName = "EasyMapperTests.xctest"
                BlueprintName = "EasyMapperTests"
                ReferencedContainer = "container:EasyMapper.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16FF02E31DB1C02100857BF6"
+            BlueprintIdentifier = "16FF02F61DB47FAE00857BF6"
             BuildableName = "EasyMapperTests.xctest"
             BlueprintName = "EasyMapperTests"
             ReferencedContainer = "container:EasyMapper.xcodeproj">

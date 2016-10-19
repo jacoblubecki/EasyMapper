@@ -10,8 +10,22 @@
 		160740EF1DADB20200C13BE0 /* EasyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 160740E11DADB20200C13BE0 /* EasyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16F2B7291DB1ABD700407F48 /* ClassFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B7281DB1ABD700407F48 /* ClassFormatter.swift */; };
 		16F2B72D1DB1B79600407F48 /* EasyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B72C1DB1B79600407F48 /* EasyMapper.swift */; };
+		16F9E12B1DB8107F00395C1D /* TestCaseChangeNested.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9E12A1DB8107F00395C1D /* TestCaseChangeNested.swift */; };
 		16FF02FA1DB47FAE00857BF6 /* EasyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF02F91DB47FAE00857BF6 /* EasyMapperTests.swift */; };
 		16FF02FC1DB47FAE00857BF6 /* EasyMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160740DE1DADB20200C13BE0 /* EasyMapper.framework */; };
+		16FF03111DB57E9B00857BF6 /* snk_simple.json in Resources */ = {isa = PBXBuildFile; fileRef = 16FF03101DB57E9B00857BF6 /* snk_simple.json */; };
+		16FF03141DB57F2400857BF6 /* snk_nested.json in Resources */ = {isa = PBXBuildFile; fileRef = 16FF03131DB57F2400857BF6 /* snk_nested.json */; };
+		16FF03161DB5855C00857BF6 /* TestCaseChangeSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF03151DB5855C00857BF6 /* TestCaseChangeSimple.swift */; };
+		16FF031B1DB585DB00857BF6 /* GroupCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF031A1DB585DB00857BF6 /* GroupCamel.swift */; };
+		16FF031D1DB5879F00857BF6 /* MeetingCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF031C1DB5879F00857BF6 /* MeetingCamel.swift */; };
+		16FF031F1DB5880400857BF6 /* RelatedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF031E1DB5880400857BF6 /* RelatedLink.swift */; };
+		16FF03211DB5892F00857BF6 /* MemberSummaryCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF03201DB5892F00857BF6 /* MemberSummaryCamel.swift */; };
+		16FF03231DB589CF00857BF6 /* Genders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF03221DB589CF00857BF6 /* Genders.swift */; };
+		16FF03251DB58A2000857BF6 /* MemberCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF03241DB58A2000857BF6 /* MemberCamel.swift */; };
+		16FF03271DB58D8D00857BF6 /* GroupSnake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF03261DB58D8D00857BF6 /* GroupSnake.swift */; };
+		16FF03291DB58DB500857BF6 /* MeetingSnake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF03281DB58DB500857BF6 /* MeetingSnake.swift */; };
+		16FF032B1DB58E0700857BF6 /* MemberSummarySnake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF032A1DB58E0700857BF6 /* MemberSummarySnake.swift */; };
+		16FF032D1DB58E3200857BF6 /* MemberSnake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF032C1DB58E3200857BF6 /* MemberSnake.swift */; };
 		3D25C78535B809E2232EAA66 /* Pods_EasyMapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33236C743350DF6E388B1D82 /* Pods_EasyMapperTests.framework */; };
 		8A17215D2E5F13EED2BD870E /* Pods_EasyMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E1971347FE3BA37E36FAD /* Pods_EasyMapper.framework */; };
 /* End PBXBuildFile section */
@@ -33,12 +47,26 @@
 		160740E21DADB20200C13BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F2B7281DB1ABD700407F48 /* ClassFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassFormatter.swift; sourceTree = "<group>"; };
 		16F2B72C1DB1B79600407F48 /* EasyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyMapper.swift; sourceTree = "<group>"; };
+		16F9E12A1DB8107F00395C1D /* TestCaseChangeNested.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCaseChangeNested.swift; sourceTree = "<group>"; };
 		16FF02F71DB47FAE00857BF6 /* EasyMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FF02F91DB47FAE00857BF6 /* EasyMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMapperTests.swift; sourceTree = "<group>"; };
 		16FF02FB1DB47FAE00857BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16FF03041DB483B200857BF6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMapper-edqckmsjnirdeedgudwfpamhgmjn/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		16FF03051DB483B200857BF6 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMapper-edqckmsjnirdeedgudwfpamhgmjn/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
 		16FF03061DB483B200857BF6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMapper-edqckmsjnirdeedgudwfpamhgmjn/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		16FF03101DB57E9B00857BF6 /* snk_simple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snk_simple.json; sourceTree = "<group>"; };
+		16FF03131DB57F2400857BF6 /* snk_nested.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snk_nested.json; sourceTree = "<group>"; };
+		16FF03151DB5855C00857BF6 /* TestCaseChangeSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCaseChangeSimple.swift; sourceTree = "<group>"; };
+		16FF031A1DB585DB00857BF6 /* GroupCamel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCamel.swift; sourceTree = "<group>"; };
+		16FF031C1DB5879F00857BF6 /* MeetingCamel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingCamel.swift; sourceTree = "<group>"; };
+		16FF031E1DB5880400857BF6 /* RelatedLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedLink.swift; sourceTree = "<group>"; };
+		16FF03201DB5892F00857BF6 /* MemberSummaryCamel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSummaryCamel.swift; sourceTree = "<group>"; };
+		16FF03221DB589CF00857BF6 /* Genders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genders.swift; sourceTree = "<group>"; };
+		16FF03241DB58A2000857BF6 /* MemberCamel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberCamel.swift; sourceTree = "<group>"; };
+		16FF03261DB58D8D00857BF6 /* GroupSnake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSnake.swift; sourceTree = "<group>"; };
+		16FF03281DB58DB500857BF6 /* MeetingSnake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingSnake.swift; sourceTree = "<group>"; };
+		16FF032A1DB58E0700857BF6 /* MemberSummarySnake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSummarySnake.swift; sourceTree = "<group>"; };
+		16FF032C1DB58E3200857BF6 /* MemberSnake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSnake.swift; sourceTree = "<group>"; };
 		33236C743350DF6E388B1D82 /* Pods_EasyMapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85452F2A1E8D59B5C37F8110 /* Pods-EasyMapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMapperTests/Pods-EasyMapperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4C2B42D807D1201ABBD8E49 /* Pods-EasyMapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMapperTests/Pods-EasyMapperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,10 +129,56 @@
 		16FF02F81DB47FAE00857BF6 /* EasyMapperTests */ = {
 			isa = PBXGroup;
 			children = (
+				16FF03171DB5859F00857BF6 /* models */,
+				16FF03121DB57EE600857BF6 /* json */,
 				16FF02F91DB47FAE00857BF6 /* EasyMapperTests.swift */,
 				16FF02FB1DB47FAE00857BF6 /* Info.plist */,
+				16FF03151DB5855C00857BF6 /* TestCaseChangeSimple.swift */,
+				16F9E12A1DB8107F00395C1D /* TestCaseChangeNested.swift */,
 			);
 			path = EasyMapperTests;
+			sourceTree = "<group>";
+		};
+		16FF03121DB57EE600857BF6 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				16FF03101DB57E9B00857BF6 /* snk_simple.json */,
+				16FF03131DB57F2400857BF6 /* snk_nested.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		16FF03171DB5859F00857BF6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				16FF03191DB585B500857BF6 /* camel */,
+				16FF03181DB585A600857BF6 /* snake */,
+				16FF031E1DB5880400857BF6 /* RelatedLink.swift */,
+				16FF03221DB589CF00857BF6 /* Genders.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		16FF03181DB585A600857BF6 /* snake */ = {
+			isa = PBXGroup;
+			children = (
+				16FF03261DB58D8D00857BF6 /* GroupSnake.swift */,
+				16FF03281DB58DB500857BF6 /* MeetingSnake.swift */,
+				16FF032A1DB58E0700857BF6 /* MemberSummarySnake.swift */,
+				16FF032C1DB58E3200857BF6 /* MemberSnake.swift */,
+			);
+			name = snake;
+			sourceTree = "<group>";
+		};
+		16FF03191DB585B500857BF6 /* camel */ = {
+			isa = PBXGroup;
+			children = (
+				16FF031A1DB585DB00857BF6 /* GroupCamel.swift */,
+				16FF031C1DB5879F00857BF6 /* MeetingCamel.swift */,
+				16FF03201DB5892F00857BF6 /* MemberSummaryCamel.swift */,
+				16FF03241DB58A2000857BF6 /* MemberCamel.swift */,
+			);
+			name = camel;
 			sourceTree = "<group>";
 		};
 		40422D49B33C200FB1A637AC /* Pods */ = {
@@ -237,6 +311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FF03111DB57E9B00857BF6 /* snk_simple.json in Resources */,
+				16FF03141DB57F2400857BF6 /* snk_nested.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +410,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FF03231DB589CF00857BF6 /* Genders.swift in Sources */,
+				16FF031D1DB5879F00857BF6 /* MeetingCamel.swift in Sources */,
+				16FF032D1DB58E3200857BF6 /* MemberSnake.swift in Sources */,
+				16FF031F1DB5880400857BF6 /* RelatedLink.swift in Sources */,
+				16FF03271DB58D8D00857BF6 /* GroupSnake.swift in Sources */,
+				16FF03161DB5855C00857BF6 /* TestCaseChangeSimple.swift in Sources */,
+				16FF031B1DB585DB00857BF6 /* GroupCamel.swift in Sources */,
+				16F9E12B1DB8107F00395C1D /* TestCaseChangeNested.swift in Sources */,
 				16FF02FA1DB47FAE00857BF6 /* EasyMapperTests.swift in Sources */,
+				16FF03251DB58A2000857BF6 /* MemberCamel.swift in Sources */,
+				16FF032B1DB58E0700857BF6 /* MemberSummarySnake.swift in Sources */,
+				16FF03291DB58DB500857BF6 /* MeetingSnake.swift in Sources */,
+				16FF03211DB5892F00857BF6 /* MemberSummaryCamel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85452F2A1E8D59B5C37F8110 /* Pods-EasyMapperTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 347AT3X89U;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EasyMapperTests/Info.plist;
@@ -520,7 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4C2B42D807D1201ABBD8E49 /* Pods-EasyMapperTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 347AT3X89U;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = EasyMapperTests/Info.plist;

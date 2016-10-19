@@ -14,48 +14,18 @@ import ObjectMapper
 
 class EasyMapperTests: XCTestCase {
     
+    let formatter = BaseFormatter()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    // MARK: - ClassFormatter Tests
-    
-    private struct ExpectedStrings {
-        static let WeatherResponse = ["class WeatherResponse: Mappable {",
-                                      "var location: String?",
-                                      "var three_day_forecast: [Three_Day_Forecast]?",
-                                      "required init?(map: Map) { }",
-                                      "func mapping(map: Map) {",
-                                      "location            <- map[\"location\"]",
-                                      "three_day_forecast  <- map[\"three_day_forecast\"]"]
-        
-        static let ForecastResponse = ["class Forecast: Mappable {",
-                                       "var day: String?",
-                                       "var temperature: Int?",
-                                       "var conditions: String?",
-                                       "required init?(map: Map) { }",
-                                       "func mapping(map: Map) {",
-                                       "day          <- map[\"day\"]",
-                                       "temperature  <- map[\"temperature\"]",
-                                       "conditions   <- map[\"conditions\"]"]
-        
-        static let ForecastSubstructure = ["class Three_Day_Forecast: Mappable {",
-                                           "var day: String?",
-                                           "var temperature: Int?",
-                                           "var conditions: String?",
-                                           "required init?(map: Map) { }",
-                                           "func mapping(map: Map) {",
-                                           "day          <- map[\"day\"]",
-                                           "temperature  <- map[\"temperature\"]",
-                                           "conditions   <- map[\"conditions\"]"]
-    }
-    
+    /*
+     
     func testResponseObjectClassFormatting() {
         let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
         let expectation = self.expectation(description: "\(URL)")
@@ -201,38 +171,17 @@ class EasyMapperTests: XCTestCase {
             XCTAssertNil(error, "\(error)")
         }
     }
-    
+    */
 }
 
-class WeatherResponse: Mappable {
-    var location: String?
-    var threeDayForecast: [Forecast]?
-    var date: Date?
-    
-    init(){}
-    
-    required init?(map: Map){
+extension XCTestCase {
+    func testJsonDictionary(forFileNamed fileName: String) -> [ String : AnyObject]? {
+        guard let file = Bundle(for: type(of: self)).path(forResource: fileName, ofType: "json"),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: file)),
+            let json = try? JSONSerialization.jsonObject(with: data) as? [ String : AnyObject ] else {
+            return nil
+        }
         
-    }
-    
-    func mapping(map: Map) {
-        location <- map["location"]
-        threeDayForecast <- map["three_day_forecast"]
-    }
-}
-
-class Forecast: Mappable {
-    var day: String?
-    var temperature: Int?
-    var conditions: String?
-    
-    required init?(map: Map){
-        
-    }
-    
-    func mapping(map: Map) {
-        day <- map["day"]
-        temperature <- map["temperature"]
-        conditions <- map["conditions"]
+        return json
     }
 }

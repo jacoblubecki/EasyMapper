@@ -1,0 +1,75 @@
+{
+    "name": "Knitting Club",
+    "id": 1234567890,
+    "budget": 1337.00,
+    "created": "2012-01-01T00:00:00.000Z",
+    "upcoming_meetings": [
+                          {
+                          "name": "Extreme Knitting Competition",
+                          "date": "2015-10-21T18:00:00.000Z",
+                          "description": "Awards include \"Warmest Sweater\", \"Best Technique\", and \"Most Backflips\". Food and drinks provided. Please register and sign waiver in advance.",
+                          "related_links": [
+                                            {
+                                            "title": "Registration",
+                                            "url": "https://extreme.knitting.com/files/12345.pdf"
+                                            },
+                                            {
+                                            "title": "Waiver",
+                                            "url": "https://extreme.knitting.com/files/12346.pdf"
+                                            }
+                                            ],
+                          "registration_required": true
+                          },
+                          {
+                          "name": "Monthly Meeting (October)",
+                          "date": "2015-10-31T18:00:00.000Z",
+                          "description": "Knit the spookiest scarf and carve pumpkins. Meeting is a potluck so please indicate what you'll be bringing at the included link.",
+                          "related_links": [
+                                            {
+                                            "title": "Food Signup",
+                                            "url": "https://regular.knitting.com/forms/food_20151031.html"
+                                            }
+                                            ],
+                          "registration_required": false
+                          }
+                          ],
+    "member_summary": {
+        "active_count": 27,
+        "total_count": 31,
+        "genders": {
+            "male": 15,
+            "female": 8,
+            "other": 4
+        },
+        "admins": [
+                   {
+                   "name": "John Smith",
+                   "age": 27,
+                   "hobbies": [
+                               "surfing",
+                               "knitting",
+                               "json parsing"
+                               ],
+                   "favorite_color": "purple",
+                   "cats_owned": 4,
+                   "can_drive": true,
+                   "is_only_child": false,
+                   "books_read": 100
+                   },
+                   {
+                   "name": "Jane Doe",
+                   "age": 33,
+                   "hobbies": [
+                               "fire juggling",
+                               "knitting",
+                               "wing suiting"
+                               ],
+                   "favorite_color": "orange",
+                   "cats_owned": 3,
+                   "can_drive": true,
+                   "is_only_child": true,
+                   "books_read": 28
+                   }
+                   ]
+    }
+}
